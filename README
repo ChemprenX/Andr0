@@ -1,0 +1,12 @@
+/project-directory
+    /vendor
+        /firebase
+            /php-jwt
+                JWT.php
+    auth_server.php
+    client.php
+    protected_page.php
+
+
+https://github.com/firebase/php-jwt
+
