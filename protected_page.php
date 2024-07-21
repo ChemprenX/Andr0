@@ -15,7 +15,20 @@ curl_close($ch);
 
 $data = json_decode($response, true);
 if (isset($data['username'])) {
-    echo 'Welcome, ' . $data['username'];
+    $username = $data['username'];
+    $role = $data['role'];
+    echo 'Welcome, ' . $username . '<br>';
+    echo 'Your role is: ' . $role . '<br><br>';
+
+    if ($role === 'admin') {
+        echo '<a href="admin.php">Admin Dashboard</a><br>';
+    }
+    if ($role === 'user') {
+        echo '<a href="user.php">User Dashboard</a><br>';
+    }
+    if ($role === 'operator') {
+        echo '<a href="operator.php">Operator Dashboard</a><br>';
+    }
 } else {
     echo 'Access denied: ' . $data['error'];
 }
