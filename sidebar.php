@@ -13,5 +13,6 @@
         <?php if ($userRole === 'operator') { ?>
         <li><a href="operator.php">Operator Panel</a></li>
         <?php } ?>
+        <li><a href="logout.php">Keluar</a></li>
     </ul>
 </aside>
