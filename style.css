@@ -33,3 +33,17 @@ section {
   flex: 1;
   padding: 10px;
 }
+
+.parameter {
+    margin-bottom: 10px;
+}
+
+.parameter label {
+    display: block;
+    margin-top: 5px;
+}
+
+.parameter input {
+    width: 200px;
+    margin-bottom: 5px;
+}
